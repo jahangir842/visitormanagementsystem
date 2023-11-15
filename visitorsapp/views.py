@@ -21,7 +21,7 @@ def home(request):
     context = {
         'posts': posts
     }
-    return render(request, 'home.html', context)
+    return render(request, 'visitors/home.html', context)
 
 
     
@@ -30,5 +30,5 @@ def home(request):
     # return render(request, "home.html")
 
 def about(request):
-    return render(request, "about.html")
+    return render(request, "visitors/about.html")
     # return render(request, "about.html")

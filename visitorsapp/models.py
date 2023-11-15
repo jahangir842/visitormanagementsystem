@@ -1,6 +1,6 @@
 from django.db import models
 from django.utils import timezone 
-from django.contrib.auth.models import users
+from django.contrib.auth.models import User
 # Create your models here.
 
 class posts(models.Model):
@@ -8,3 +8,4 @@ class posts(models.Model):
     content = models.TextField()
     date_posted = models.DateTimeField(default=timezone.now)
     auther = models.CharField(max_length=50)
+  
