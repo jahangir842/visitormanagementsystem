@@ -7,5 +7,5 @@ class posts(models.Model):
     title = models.CharField(max_length=100)
     content = models.TextField()
     date_posted = models.DateTimeField(default=timezone.now)
-    auther = models.CharField(max_length=50)
+    auther = models.ForeignKey(User, on_delete=models.CASCADE)
   
