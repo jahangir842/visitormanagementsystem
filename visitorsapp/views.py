@@ -1,5 +1,9 @@
 from django.shortcuts import render, HttpResponse
+from visitorsapp.models import Post
+# from . import models
 
+# print(models.Post)
+print(Post)
 
 posts = [
     {
@@ -22,12 +26,6 @@ def home(request):
         'posts': posts
     }
     return render(request, 'visitors/home.html', context)
-
-
-    
-    
-    # return render(request, "home.html")
-    # return render(request, "home.html")
 
 def about(request):
     return render(request, "visitors/about.html")
