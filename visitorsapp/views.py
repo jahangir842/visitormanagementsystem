@@ -1,16 +1,11 @@
 from django.shortcuts import render, HttpResponse
-
-
-
-
-
 # from visitorsapp.models import Post
 from . import models
 
 
 
-# print(models.Post)
-print(Post)
+print(models.Post)
+# print(Post)
 
 posts = [
     {
