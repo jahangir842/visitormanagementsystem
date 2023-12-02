@@ -36,7 +36,7 @@ def home(request):
     return render(request, 'visitors/home.html', context)
 
 def about(request):
-    return render(request, "visitors/about.html")
+    return render(request, 'visitors/about.html')
     # return render(request, "about.html")
 
 # if __name__ == "__main__":
