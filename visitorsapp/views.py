@@ -1,10 +1,16 @@
 from django.shortcuts import render, HttpResponse
-# from visitorsapp.models import Post
+
+# import statement using relative import
 from . import models
 
+# import statement using absolute import
+# from visitorsapp import models
+
+# import sys
+# print(sys.path)
 
 
-print(models.Post)
+# print(models.Post)
 # print(Post)
 
 posts = [
@@ -32,3 +38,7 @@ def home(request):
 def about(request):
     return render(request, "visitors/about.html")
     # return render(request, "about.html")
+
+# if __name__ == "__main__":
+#     Your main script logic here
+#     pass
