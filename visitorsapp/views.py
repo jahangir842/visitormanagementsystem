@@ -1,17 +1,7 @@
 from django.shortcuts import render, HttpResponse
 
 # import statement using relative import
-from . import models
-
-# import statement using absolute import
-# from visitorsapp import models
-
-# import sys
-# print(sys.path)
-
-
-# print(models.Post)
-# print(Post)
+from .models import Post
 
 # posts = [
 #     {
@@ -30,7 +20,7 @@ from . import models
 
 # Create your views here.
 def home(request):
-    posts = models.Post.objects.all()
+    posts = Post.objects.all()
     
     context = {
         'posts': posts
